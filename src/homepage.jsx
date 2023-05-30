@@ -14,7 +14,7 @@ const Homepage = () => {
   return (
     <div className="homepage wrapper grid grid-cols-12">
       <div className="close-btn">
-        <img src={close} alt="" />
+        <img src={close} alt="" style={{height : '2rem'}} />
       </div>
       <div
         style={{
