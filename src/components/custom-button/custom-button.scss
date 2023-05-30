@@ -1,0 +1,17 @@
+@import '../../sass/variables';
+
+.btn-submit {
+  background-color: $blue_bg;
+  width: 100%;
+  padding: 1.2em 0;
+  margin-top: 0.75em;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 0.6em;
+  border: none;
+  &:hover {
+    background-color: #1254d6;
+  }
+}

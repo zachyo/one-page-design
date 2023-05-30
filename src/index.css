@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding-top: 3rem; */
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  padding: 3rem;
+  padding-top: 5rem;
+  margin-top: 6rem;
+  box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.1);
+}
+.wrapper .close-btn {
+  position: absolute;
+  z-index: 99;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+.wrapper .close-btn svg {
+  height: 1.5em;
 }

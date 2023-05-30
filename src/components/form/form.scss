@@ -1,0 +1,163 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.end-icon {
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 1.3rem;
+}
+.form {
+  .input-group {
+    margin-bottom: 1rem;
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+
+      .description {
+        text-align: left;
+
+        .title {
+          font-size: 1.1rem;
+          font-weight: 700;
+          color: $text_one;
+          margin-bottom: 0.4rem;
+        }
+        .desc {
+          font-size: 0.77em;
+          font-weight: 500;
+          color: #8e96a3;
+        }
+      }
+      button.edit {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        color: #1da1f2;
+      }
+      button {
+        img {
+          height: 1rem;
+          fill: #1da1f2;
+          filter: invert(23%) sepia(95%) saturate(4062%) hue-rotate(215deg) brightness(101%) contrast(108%);
+        }
+        span {
+          /* display: block; */
+          margin-left: 1rem;
+          /* font-weight: 500; */
+        }
+      }
+    }
+    .main {
+      position: relative;
+      display: flex;
+      img {
+        position: absolute;
+        &.mc {
+          left: 0;
+          height: 2em;
+          top: 50%;
+          transform: translate(0, -50%);
+          left: 1.2em;
+          margin-right: 2rem;
+        }
+        &.end-icon {
+          height: 1.5rem;
+          right: 1.5em;
+        }
+      }
+      input {
+        border: 2px solid $input-border;
+        width: 87%;
+        padding: 1.3rem 4rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 6px;
+        background: #f9fbfc;
+        color: $text_one;
+        margin: 0;
+        &:focus {
+          outline-color: $active-border;
+          background-color: #f0f5ff;
+        }
+        &::placeholder {
+          font-weight: 400;
+          opacity: 0.5;
+        }
+      }
+    }
+    
+  }
+  .input-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    .description {
+      text-align: left;
+      .title {
+        text-transform: capitalize;
+        font-size: 1.1em;
+        font-weight: 700;
+        color: $text_one;
+        margin-bottom: 0.4em;
+      }
+      .desc {
+        font-size: 0.77em;
+        font-weight: 500;
+        color: $text_two;
+      }
+    }
+    .input-value {
+      width: 50%;
+      &.double {
+        display: flex;
+        align-items: center;
+        .divider {
+          display: block;
+          font-size: 1.5em;
+          font-weight: 900;
+          margin: 0 1rem;
+          color: $text_one;
+          // position: absolute;
+          // left: 50%;
+          // transform: translate(-50%, 0);
+        }
+      }
+      input {
+        width: 97%;
+        border: 2px solid $input-border;
+        padding: 1.3rem 0;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 6px;
+        color: $text_one;
+        margin: 0;
+        // padding-left: 2rem;
+        &:focus {
+          outline-color: $active-border;
+          background-color: #f0f5ff;
+        }
+        &::placeholder {
+          font-weight: 400;
+          opacity: 0.5;
+        }
+      }
+      input[type='password'] {
+        text-align: left;
+        padding-left: 1.8rem;
+        width: 90%;
+        letter-spacing: 4px;
+      }
+      .end-icon {
+        position: absolute;
+        height: 2rem;
+        opacity: 0.4;
+      }
+    }
+  }
+}
